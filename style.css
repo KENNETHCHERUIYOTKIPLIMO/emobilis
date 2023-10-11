@@ -1,0 +1,19 @@
+body{
+    background-color: brown;
+}
+a:hover{
+    color: white;
+    background-color: #9652e9;
+    border-radius: 5px;
+    font-size: 30px;
+}
+h1{
+    background: #051105;
+    border-radius: 5px;
+    outline-style: solid;
+}
+img{
+    size: 20px;
+    width: auto;
+    height: fit-content;
+}

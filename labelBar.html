@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .input-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-wrapper label {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            transition: 0.2s;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .input-wrapper input:not(:placeholder-shown) + label,
+        .input-wrapper input:focus + label {
+            top: -15px;
+            opacity: 1;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<form id="loginForm">
+    <div class="input-wrapper">
+        <input type="text" id="username" name="username" required placeholder="Username">
+        <label for="username">Username</label>
+    </div>
+
+    <div class="input-wrapper">
+        <input type="password" id="password" name="password" required placeholder="Password">
+        <label for="password">Password</label>
+    </div>
+    
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+</body>
+</html>
